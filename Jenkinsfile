@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('publish') {
       steps {
-        git(url: 'https://github.com/ursite-io/ursite.io', branch: 'main')
+        git(branch: 'main', url: 'https://github.com/ursite-io/ursite.io')
       }
     }
-
   }
 }
